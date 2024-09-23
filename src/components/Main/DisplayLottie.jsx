@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-web/build/player/lottie_light";
 
 const GreetingLottie = ({ animationPath }) => {
   const defaultOptions = {

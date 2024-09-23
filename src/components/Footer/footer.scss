@@ -1,0 +1,81 @@
+@import "../../app.scss";
+    .footer {
+        width: 100%; // Ensure it spans the full width of the viewport
+        position: absolute; // Position it at the bottom of the page
+        transform: translateX(-11%);
+                       // Stick the footer to the bottom of the page
+
+      margin-top:42%;
+        display: flex;
+        justify-content: center; // Center the footer content horizontally
+        align-items: center; // Center the footer content vertically
+        padding:0 ;
+        // Or any color fitting your design
+        @include mobile {
+           
+            width: 100%; 
+            margin-top:200%;
+            left:10%;
+      
+        }
+
+      
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo {
+  width: 20px;               // Size of the logo
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 25%;  
+  @include mobile{
+    width: 20px;               // Size of the logo
+    height: 20px;
+    border-radius: 25%; 
+    margin-right: 10px;
+  }  
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  @include mobile{
+    font-size: 13px;
+  }
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 10px;
+  color: #ccc;
+  @include mobile{
+    font-size: 10px;
+  }
+}
+    }
+
+    @media (max-width: 600px) {
+        .footer{
+            width: 100%; 
+            margin-top:200%;
+            left:10%;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 768px) {
+        .footer{
+            width: 100%; 
+            margin-top:200%;
+            left:10%;
+        }
+      }

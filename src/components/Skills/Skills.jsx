@@ -38,7 +38,7 @@ const Services = () => {
   
         <div className="title">
          
-       <GreetingLottie animationPath="/src/components/lottie/Skill4.json"/>
+       <GreetingLottie animationName="animation2"/>
         </div>
         <h3>
             <motion.b style={{color:"orange"}}>A FULL-STACK DEVELOPER</motion.b> PASSIONATE ABOUT EXPLORING AND MASTERING EVERY TECH STACK ACROSS THE SOFTWARE DEVELOPMENT SPECTRUM.

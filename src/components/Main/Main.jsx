@@ -87,7 +87,7 @@ const Main = () => {
       </motion.div>
 
       <div className="image">
-        <GreetingLottie animationPath="/src/components/lottie/coding.json" />
+        <GreetingLottie animationName="animation1"/>
       </div>
     </div>
   );

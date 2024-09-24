@@ -23,7 +23,7 @@ cursor: pointer;
  
     gap: 40px;
     @include mobile{
-       height: 58%;
+       height: 56%;
        width: 100%;
        gap:4%;
        align-items: center;
@@ -66,6 +66,7 @@ p{
         z-index: 10;
         @include mobile{
             padding:10px;
+            font-size: 10px;
            
             
         }
@@ -75,7 +76,7 @@ p{
 img{
     width: 50px;
     @include mobile{
-        width: 35px;
+        width: 30px;
         
     }
     
@@ -93,11 +94,11 @@ img{
 
     @include mobile{
       height: 50%;
-      width: 85%;
+      width: 75%;
       bottom: 0;
       align-items: center;
       top: unset;
-     left:7%;
+     left:15%;
     }
  
 

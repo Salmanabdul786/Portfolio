@@ -6,6 +6,9 @@
   justify-content: center;
   background-color: white;
   color: black;
+  @include mobile{
+   color: white;
+  }
 
   .bg {
     z-index: 999;
@@ -17,7 +20,12 @@
     background: rgb(255, 255, 255);
     @include mobile{
       width: 200px;
-      
+      background: linear-gradient(
+        rgba(255, 255, 255, 0.1),  /* Solid color with partial transparency */
+        rgba(255, 255, 255, 0.1)   /* Solid with the same transparency */
+      );
+      backdrop-filter: blur(15px);  /* Apply blur */
+      -webkit-backdrop-filter: blur(15px);  /* For Safari */
       }
    
 
@@ -30,6 +38,7 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+     
    
       a {
         font-size: 40px;
@@ -54,7 +63,9 @@
     background-color:transparent;
     border: none;
     cursor: pointer;
+@include mobile{
 
+}
    
   }
 }

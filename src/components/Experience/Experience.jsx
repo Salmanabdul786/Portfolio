@@ -9,7 +9,7 @@ const experiences = [
     period: "2021 - Present",
     type: "Full Time",
     logo: "/wipro.jpeg", // Update with the actual path for the logo,
-    des:"Wipro Limited is a leading global information technology, consulting, and business process services company. Headquartered in Bangalore, India, Wipro provides a wide range of services including IT solutions, digital strategy, and consulting across various industries like banking, healthcare, and manufacturing. "
+    des:"Worked as a developer, enhancing web applications by transitioning front-end functionality to ReactJS and optimizing back-end processes. Developed reusable components, integrated RESTful APIs, and improved SQL database performance, ensuring efficient project execution and timely milestone delivery. "
   },
   {
     title: "Course Developer",
@@ -17,7 +17,7 @@ const experiences = [
     period: "2020 – 2021",
     type: "Internship ",
     logo: "/cc.jpeg", // Update with the actual path for the logo
-    des:"Wipro Limited is a leading global information technology, consulting, and business process services company. Headquartered in Bangalore, India, Wipro provides a wide range of services including IT solutions, digital strategy, and consulting across various industries like banking, healthcare, and manufacturing."
+    des:"Served as a Course Developer, creating and enhancing undergraduate courses in diverse fields like Information Technology and BFSI, while collaborating with experts to improve student engagement through interactive simulations and course revamps."
   }
 ];
 

@@ -4,7 +4,7 @@ import './experience.scss';
 
 const experiences = [
   {
-    title: "Project Engineer",
+    title: "Project Engineer-L2",
     company: "Wipro Limited",
     period: "2021 - Present",
     type: "Full Time",

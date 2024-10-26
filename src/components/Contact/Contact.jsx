@@ -4,7 +4,6 @@ import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Footer from "../Footer/Footer";
 
-
 const variants = {
   initial: {
     y: 500,
@@ -23,6 +22,8 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -40,7 +41,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true)
+          setSuccess(true);
         },
         (error) => {
           setError(true);
@@ -48,48 +49,66 @@ const Contact = () => {
       );
   };
 
-  return (
-<div className="contact">
-    <motion.div
-      ref={ref}
-      className="contact"
-      variants={variants}
-      initial="initial"
-      whileInView="animate"
-    >
-      <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
-        <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>abdulkareem786salman@gmail.com</span>
-        </motion.div>
+  const scrollToInput = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+91 8825700029</span>
+  return (
+    <div className="contact">
+      <motion.div
+        ref={ref}
+        className="contact"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+      >
+        <motion.div className="textContainer" variants={variants}>
+          <motion.h1 variants={variants}>Let’s work together</motion.h1>
+          <motion.div className="item" variants={variants}>
+            <h2>Mail</h2>
+            <span>abdulkareem786salman@gmail.com</span>
+          </motion.div>
+
+          <motion.div className="item" variants={variants}>
+            <h2>Phone</h2>
+            <span>+91 8825700029</span>
+          </motion.div>
         </motion.div>
-      </motion.div>
-      <div className="formContainer">
-       
-        <motion.form
-          ref={formRef}
-          onSubmit={sendEmail}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-        >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
-          {error && "Error"}
-          {success && "Email Sent to Abdul"}
-        </motion.form>
         
-      </div>
-     
-    </motion.div>
-</div>
+        <div className="formContainer">
+          <motion.form
+            ref={formRef}
+            onSubmit={sendEmail}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+          >
+            <input
+              type="text"
+              required
+              placeholder="Name"
+              name="name"
+              ref={nameRef}
+              onFocus={() => scrollToInput(nameRef)}
+            />
+            <input
+              type="email"
+              required
+              placeholder="Email"
+              name="email"
+              ref={emailRef}
+              onFocus={() => scrollToInput(emailRef)}
+            />
+            <textarea rows={8} placeholder="Message" name="message" />
+            <button>Submit</button>
+            {error && "Error"}
+            {success && "Email Sent to Abdul"}
+          </motion.form>
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

@@ -12,7 +12,6 @@
     width: 100%;
     padding: 10px;
     flex-direction: column;
-    min-height: 100vh;
     
   }
 
@@ -58,10 +57,8 @@
     @include mobile {
       padding: 50px;
       width: 100%;
-      bottom: 12%;
-      padding-bottom: 150px; // Extra bottom padding to account for keyboard
-      max-height: 80vh; // Allow scrolling on smaller screens
-      overflow-y: auto;
+      bottom:12%;
+      
     }
 
 
@@ -82,7 +79,6 @@
 
         @include mobile {
           padding: 10px;
-          font-size: 16px; // Adjust font for mobile readability
         }
       }
 
@@ -94,7 +90,6 @@
         font-weight: 500;
         @include mobile {
           padding: 10px;
-          font-size: 16px; // Adjust button font size for mobile
         }
       }
     }

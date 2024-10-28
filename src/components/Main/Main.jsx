@@ -59,11 +59,11 @@ const Main = () => {
           </motion.p>
           <motion.div className="button">
             <a
-              href="https://drive.google.com/file/d/1nkf7Gw1dlXpCQ8KZH_WAsh2kke-78sJ0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Mnc4TO8UOv4RWXfmCwQK-cReF6LJZCSX/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <motion.button>See My Resume</motion.button>
+              <motion.button>My Resume</motion.button>
             </a>
             <a href="#Contact Me">
               <motion.button>Connect me</motion.button>

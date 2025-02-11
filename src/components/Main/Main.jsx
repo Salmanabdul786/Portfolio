@@ -59,7 +59,7 @@ const Main = () => {
           </motion.p>
           <motion.div className="button">
             <a
-              href="https://drive.google.com/file/d/1ptYirtoxVOPjmHF__S1om_kXf_ncdOCg/view?usp=sharingg"
+              href="https://drive.google.com/file/d/1ptYirtoxVOPjmHF__S1om_kXf_ncdOCg/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
